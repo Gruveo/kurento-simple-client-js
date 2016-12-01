@@ -7,12 +7,12 @@ This is lightweight alternative client to https://github.com/Kurento/kurento-cli
 ## Functions
 
 * `kurento(url, callback, reporter)` - `callback(err, client)`, `reporter(message)`
-* `client.create(objectType, constructorParams, callback)` - where `callback(err, objectId)`
-* `client.invoke(objectId, operation, operationParams, callback)` - where `callback(err, returnValue)`
-* `client.release(objectId, callback)`
-* `client.ping(interval, callback)`
-* `client.subscribe(objectId, type, callback, callback)` - where `callback(err, subscriptionId)`
-* `client.unsubscribe(subscription, objectId, callback)`
+* `client.create(objectType, constructorParams, callback)` - `callback(err, objectId)`
+* `client.invoke(objectId, operation, operationParams, callback)` - `callback(err, returnValue)`
+* `client.release(objectId, callback)` - `callback(err)`
+* `client.ping(interval, callback)` - `callback(err, pong)`
+* `client.subscribe(objectId, eventType, eventHandler, callback)` - `eventHandler(eventData)`, `callback(err, subscriptionId)`
+* `client.unsubscribe(subscriptionId, objectId, callback)` - `callback(err)`
 * `client.getSessionId()`
 * `client.setSessionId(sessionId)`
 * `client.close()`
