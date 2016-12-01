@@ -22,7 +22,7 @@ This is lightweight alternative client to https://github.com/Kurento/kurento-cli
 Simple unfinished example:
 
 ```javascript
-const kurento = require('kurento-somple-client-js');
+const kurento = require('kurento-simple-client-js');
 const autoInject = require('async/autoInject');
 const each = require('async/each');
 const config = require('config');
